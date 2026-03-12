@@ -6,9 +6,9 @@
  * @return {object}
  */
 function convertToObject(sourceString) {
-  const list = sourceString.split(';');
+  const styles = sourceString.split(';');
 
-  return list.reduce((acc, cur, i) => {
+  return styles.reduce((acc, cur, i) => {
     if (cur !== '') {
       const parts = cur.split(':');
 
